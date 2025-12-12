@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SHINE TECH</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        /* Navbar */
+        .navbar{
+            background-color: brown;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a{
+            color: beige;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover{
+            background: #333;
+        }
+
+        .auth-links a{
+            color: beige;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+
+        .auth-links a:hover{
+            background: #333;
+        }
+
+        /* Responsive */
+        @media(max-width:600px){
+            .navbar{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links, .auth-links{
+                margin-top: 10px;
+            }
+        }
+
+        /* Login Form */
+        .form-container{
+            max-width: 350px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            /*box-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+        }
+
+        .form-container h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container input{
+            width: 100%;
+            padding: 5px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        .form-container button{
+            width: 100%;
+            padding: 12px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container button:hover{
+            background: #333;
+        }
+
+        .signup-link{
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* FOOTER */
+        footer{
+            margin-top: auto;
+            background: black;
+            color: beige;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer .footer-links a{
+            color: beige;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        footer .footer-links a:hover{
+            text-decoration: underline;
+        }
+
+        @media(max-width:600px){
+            footer .footer-links{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                margin-top: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        
+        <div class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="auth-links">
+            <a href="login.html">LOGIN</a>
+            <a href="signup.html">REGISTER</a>
+        </div>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <div class="form-container">
+        <h2>Login</h2>
+        <form>
+            <label>Username</label>
+            <input type="text" placeholder="Enter Username">
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password">
+
+            <button type="submit">Login</button>
+
+            <div class="signup-link">
+                Don't have an account? <a href="signup.html">Sign up</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 SHINE TECH. All Rights Reserved.</p>
+        
+    </footer>
+
+</body>
+</html>
